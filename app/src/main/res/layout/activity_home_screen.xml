@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/md_grey_50"
+    tools:context=".HomeScreenActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_margin="0dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/accent_material_light"
+            android:text="Current Month "/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp">
+
+        <TextView
+            android:id="@+id/homescreen_tv_income"
+            style="@style/hoem_textfield_style"
+            android:layout_width="match_parent"
+            android:layout_margin="0dp"
+            android:gravity="center_vertical"
+            android:text="Income "/>
+        <TextView
+            android:id="@+id/homescreen_tv_income_amount"
+            style="@style/hoem_textfield_style"
+            android:layout_width="match_parent"
+            android:layout_margin="0dp"
+            android:gravity="center_vertical"
+            android:textColor="#00ff00"
+            android:text="0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp">
+
+        <TextView
+            android:id="@+id/homescreen_tv_expense"
+            style="@style/hoem_textfield_style"
+            android:text="Expense " />
+        <TextView
+            android:id="@+id/homescreen_tv_expense_amount"
+            style="@style/hoem_textfield_style"
+            android:text="0"
+            android:textColor="#ff0000"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp">
+        <TextView
+            android:id="@+id/homescreen_tv_saving"
+            style="@style/hoem_textfield_style"
+            android:text="Saving "/>
+
+        <TextView
+            android:id="@+id/homescreen_tv_saving_amount"
+            style="@style/hoem_textfield_style"
+            android:text="0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="35px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/home_btn_inner_linear">
+
+            <Button
+                android:id="@+id/homescreen_btn_addincome"
+                style="@style/home_button"
+                android:text="Add Income"
+                android:backgroundTint="@color/md_green_400"
+                android:background="@drawable/home_screen_button"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/home_btn_inner_linear">
+
+            <Button
+                android:id="@+id/homescreen_btn_addexpense"
+                style="@style/home_button"
+                android:text="Add Expense"
+                android:backgroundTint="@color/md_red_500"
+                android:background="@drawable/home_screen_button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal"
+        android:layout_marginBottom="0dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/homescreen_btn_history"
+            style="@style/home_button"
+            android:text="History"
+            android:backgroundTint="@color/md_orange_400"
+            android:background="@drawable/home_screen_button"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

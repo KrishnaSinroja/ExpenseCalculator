@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/md_grey_50"
+    tools:context="com.expensescalculator.Design.AddIncomeActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <TextView
+                    android:id="@+id/addincome_tv_Date"
+                   style="@style/incexp_title"
+                    android:text="Date" />
+
+                <EditText
+                    android:id="@+id/addincome_ed_Date"
+                    android:hint="Select Date"
+                    android:inputType="none"
+                    android:editable="false"
+                    style="@style/incexp_value"/>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/addincome_tv_Income"
+                    style="@style/incexp_title"
+                    android:text="Income" />
+
+                <EditText
+                    android:id="@+id/addincome_ed_Income"
+                    android:hint="Enter Income"
+                    android:inputType="numberDecimal"
+                    style="@style/incexp_value"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/addincome_tv_Category"
+                    style="@style/incexp_title"
+                    android:text="Category" />
+
+                <Spinner
+                    android:id="@+id/addincome_sp_Category"
+                    style="@style/incexp_value"
+                    >
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/addincome_tv_Payer"
+                    style="@style/incexp_title"
+                    android:text="Payer" />
+
+                <EditText
+                    android:id="@+id/addincome_ed_payer"
+                    android:hint="Enter Payer Detail"
+                    android:inputType="text"
+                    style="@style/incexp_value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/addincome_tv_Discription"
+                    style="@style/incexp_title"
+                    android:text="Description" />
+
+                <EditText
+                    android:id="@+id/addincome_ed_Discription"
+                    android:hint="Write Description"
+                    android:inputType="text"
+                    style="@style/incexp_value"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30px">
+
+                <Button
+                    android:id="@+id/addincome_btn_add"
+                    style="@style/incexp_button"
+                    android:textAllCaps="false"
+                    android:background="@drawable/incexp_screen_button"
+                    android:layout_marginRight="10dp"
+                    android:text="Sae" />
+
+                <Button
+                    android:id="@+id/addincome_btn_Cancel"
+                    style="@style/incexp_button"
+                    android:background="@drawable/incexp_screen_button"
+                    android:layout_marginLeft="10dp"
+                    android:textAllCaps="false"
+                    android:text="Cancel" />
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>
